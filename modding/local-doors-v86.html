@@ -1,0 +1,3152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/enigma-bbs/assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/enigma-bbs/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/enigma-bbs/assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="/enigma-bbs/assets/css/style.css?v=">
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Local Doors — Native v86 Emulation | ENiGMA½ BBS Software</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Local Doors — Native v86 Emulation" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Native DOS Emulation via v86" />
+<meta property="og:description" content="Native DOS Emulation via v86" />
+<meta property="og:site_name" content="ENiGMA½ BBS Software" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2026-05-05T16:45:28+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Local Doors — Native v86 Emulation" />
+<script type="application/ld+json">
+{"description":"Native DOS Emulation via v86","headline":"Local Doors — Native v86 Emulation","dateModified":"2026-05-05T16:45:28+00:00","datePublished":"2026-05-05T16:45:28+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"/enigma-bbs/modding/local-doors-v86.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/enigma-bbs/assets/images/enigma-logo.png"}},"url":"/enigma-bbs/modding/local-doors-v86.html","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+    
+    <div id="container">
+        <div class="sidebar" id="sidebar">
+        <hr class="mobile-divide">
+            <div class="container">
+          <a href="/enigma-bbs/"><img src="/enigma-bbs/assets/images/enigma-logo.png" class="logo" alt="Enigma logo"></a>
+            </div>
+            
+            <ul>
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+  <li>Installation</li>
+  <ul>
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/installation/installation-methods.html">Installation Methods</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/installation/install-script.html">Install Script</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/installation/docker.html">Docker</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/installation/manual.html">Manual Installation</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+      <li>OS / Hardware Specific</li>
+      <ul>
+    
+
+
+    
+    <li><a href="/enigma-bbs/installation/hardware/rpi.html">Raspberry Pi</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/installation/hardware/windows.html">Installation Under Windows</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+    </ul>
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/installation/network.html">Network Setup</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/installation/testing.html">Testing Your Installation</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/installation/production.html">Production Installation</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/installation/development.html">Development Environment Setup</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+      </ul>
+    
+  <li>Configuration</li>
+  <ul>
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/configuration/creating-config.html">Creating Initial Config Files</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/configuration/sysop-setup.html">SysOp Setup</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/configuration/config-files.html">Configuration Files</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/configuration/config-hjson.html">System Configuration</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/configuration/hjson.html">HJSON Config Files</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/configuration/menu-hjson.html">Menu HSJON</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/configuration/directory-structure.html">Directory Structure</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/configuration/external-binaries.html">External Support Binaries</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/configuration/archivers.html">Archivers</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/configuration/file-transfer-protocols.html">File Transfer Protocols</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/configuration/email.html">Email</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/configuration/colour-codes.html">Colour Codes</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/configuration/event-scheduler.html">Event Scheduler</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/configuration/acs.html">Access Condition System (ACS)</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/configuration/achievements.html">Achievements</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/configuration/security.html">Security</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+      </ul>
+    
+  <li>Miscellaneous</li>
+  <ul>
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/misc/user-interrupt.html">User Interruptions</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+      </ul>
+    
+  <li>File Base</li>
+  <ul>
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/filebase/index.html">About File Areas</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/filebase/first-file-area.html">Configuring a File Base</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/filebase/acs.html">ACS</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/filebase/uploads.html">Uploads</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/filebase/web-access.html">Web Access</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/filebase/tic-support.html">TIC Support</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/filebase/network-mounts-and-symlinks.html">Network Mounts &amp; Symlinks</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+      </ul>
+    
+  <li>Message Areas</li>
+  <ul>
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/messageareas/configuring-a-message-area.html">Message Base</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/messageareas/message-networks.html">Message Networks</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/messageareas/bso-import-export.html">BSO Import / Export</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/messageareas/netmail.html">Netmail</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/messageareas/qwk.html">QWK Support</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/messageareas/internet-mail.html">Internet Mail (Email)</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/messageareas/ftn.html">FidoNet-Style Networks (FTN)</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+      </ul>
+    
+  <li>Art</li>
+  <ul>
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/general.html">General Art Information</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/themes.html">Themes</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/mci.html">MCI Codes</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/pause-prompts.html">Pause Prompts</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+      <li>Views</li>
+      <ul>
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/views/views.html">Views</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/views/button_view.html">Button View</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/views/edit_text_view.html">Edit Text View</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/views/full_menu_view.html">Full Menu View</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/views/horizontal_menu_view.html">Horizontal Menu View</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/views/mask_edit_text_view.html">Mask Edit Text View</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/views/multi_line_edit_text_view.html">Multi Line Edit Text View</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/views/spinner_menu_view.html">Spinner Menu View</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/views/text_view.html">Text View</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/views/status_bar_view.html">Status Bar View</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/views/ticker_view.html">Ticker View</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/views/toggle_menu_view.html">Toggle Menu View</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/art/views/vertical_menu_view.html">Vertical Menu View</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+    </ul>
+  
+
+  
+    
+      </ul>
+    
+  <li>Servers</li>
+  <ul>
+
+  
+
+    
+      <li>Login Servers</li>
+      <ul>
+    
+
+
+    
+    <li><a href="/enigma-bbs/servers/loginservers/telnet.html">Telnet Server</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/servers/loginservers/ssh.html">SSH Server</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/servers/loginservers/websocket.html">WebSocket / Web Interface Server</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+    </ul>
+  
+
+  
+
+    
+      <li>Content Servers</li>
+      <ul>
+    
+
+
+    
+    <li><a href="/enigma-bbs/servers/contentservers/web-server.html">Web Server</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/servers/contentservers/web-handlers.html">Web Handlers</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/servers/contentservers/activitypub-handler.html">ActivityPub Web Handler</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/servers/contentservers/webfinger-handler.html">WebFinger Web Handler</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/servers/contentservers/gopher.html">Gopher Server</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/servers/contentservers/nntp.html">NNTP Server</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+    </ul>
+  
+
+  
+    
+      </ul>
+    
+  <li>Modding</li>
+  <ul>
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/local-doors.html">Local Doors</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/local-doors-abracadabra.html">Local Doors — Scripts &amp; Native Binaries</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/local-doors-dos-emulation.html">Local Doors — External DOS Emulators</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+      <li class="active-nav">Local Doors — Native v86 Emulation</li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/door-servers.html">Door Servers</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/telnet-bridge.html">Telnet Bridge</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/existing-mods.html">Existing Mods</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/file-area-list.html">File Area List</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/last-callers.html">Last Callers</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/whos-online.html">Who's Online</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/user-list.html">User List</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/msg-conf-list.html">Message Conference List</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/msg-area-list.html">Message Area List</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/bbs-list.html">BBS List</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/rumorz.html">Rumorz</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/file-transfer-protocol-select.html">File Transfer Protocol Select</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/onelinerz.html">Onelinerz</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/show-art.html">The Show Art Module</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/file-base-download-manager.html">File Base Download Manager</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/file-base-web-download-manager.html">File Base Web Download Manager</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/set-newscan-date.html">Set Newscan Date Module</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/configure-newscan.html">Configure Newscan Module</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/node-msg.html">Node to Node Messaging</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/top-x.html">TopX</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/user-2fa-otp-config.html">2FA/OTP Config</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/autosig-edit.html">Auto Signature Editor</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/menu-modules.html">Menu Modules</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/wfc.html">Waiting For Caller (WFC)</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/sysop-chat.html">Sysop Chat</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+      </ul>
+    
+  <li>Administration</li>
+  <ul>
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/admin/administration.html">Administration</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/admin/oputil.html">oputil</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/admin/upgrading.html">Upgrading</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+      </ul>
+    
+  <li>Troubleshooting</li>
+  <ul>
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/troubleshooting/monitoring-logs.html">Monitoring Logs</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/troubleshooting/ssh-troubleshooting.html">Troubleshooting SSH</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+      </ul>
+    
+  <li>Message Areas</li>
+  <ul>
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/messageareas/binkp.html">BinkP Native Mailer</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+      </ul>
+    
+  <li>Modding</li>
+  <ul>
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/activitypub-msg-browser.html">ActivityPub Message Browser</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/activitypub-msg-viewer.html">ActivityPub Message Viewer</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/modding/local-doors-zmachine.html">Local Doors — Z-Machine Interactive Fiction</a></li>
+    
+
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+    
+      </ul>
+    
+  <li>Troubleshooting</li>
+  <ul>
+
+  
+
+    
+
+
+    
+    <li><a href="/enigma-bbs/troubleshooting/websocket-troubleshooting.html">Troubleshooting WebSocket &amp; VTX</a></li>
+    
+
+
+  
+  
+    </ul>
+    
+  
+
+</ul>
+
+        </div>
+        <div class="main_area">
+          <div class="container">
+            <section id="main_content">
+              <div class="PageNavigation">
+              
+              <a class="btn" style="float:left;margin-right: 20px;" href="/enigma-bbs/modding/local-doors-dos-emulation.html">« Local Doors — External DOS Emulators</a>
+              
+              <a href="#sidebar" class="btn menu_button">MENU</a>
+              
+              <a class="btn" style="float: right;margin-left: 20px" href="/enigma-bbs/modding/door-servers.html">Door Servers »</a>
+              
+              <br clear="both">
+              </div>
+
+                <div class="page">
+    <h1 class="page-title">Local Doors — Native v86 Emulation</h1>
+    <h2 id="native-dos-emulation-via-v86">Native DOS Emulation via v86</h2>
+
+<p>ENiGMA½ includes a built-in x86/DOS emulator powered by <a href="https://github.com/copy/v86">v86</a> — a JavaScript x86 emulator that runs entirely within Node.js. The <code class="language-plaintext highlighter-rouge">v86_door</code> module boots a FreeDOS disk image and bridges COM1 directly to the user’s connection, with no external emulator installed on the server.</p>
+
+<blockquote>
+  <p><img class="emoji" title=":information_source:" alt=":information_source:" src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png" height="20" width="20"> The emulator runs in a dedicated worker thread, so it does not block ENiGMA½’s event loop. Each active session gets its own isolated emulator instance.</p>
+</blockquote>
+
+<hr>
+
+<h3 id="how-it-works">How It Works</h3>
+
+<ol>
+  <li>ENiGMA½ generates the appropriate drop file for the user (DORINFO, DOOR.SYS, etc.)</li>
+  <li>The drop file is written into a small in-memory FAT12 floppy image — no temp files on disk</li>
+  <li>v86 boots the op-supplied FreeDOS disk image from the hard drive (<code class="language-plaintext highlighter-rouge">C:</code>)</li>
+  <li>The drop file floppy is mounted as <code class="language-plaintext highlighter-rouge">A:</code> in FreeDOS</li>
+  <li>The door’s <code class="language-plaintext highlighter-rouge">AUTOEXEC.BAT</code> copies the drop file from <code class="language-plaintext highlighter-rouge">A:</code> and launches the game</li>
+  <li>COM1 serial I/O is bridged directly between v86 and the user’s connection</li>
+  <li>When the door exits and FreeDOS powers off, the session ends cleanly</li>
+</ol>
+
+<hr>
+
+<h3 id="prerequisites">Prerequisites</h3>
+
+<h4 id="bios-files">BIOS Files</h4>
+
+<p>v86 requires SeaBIOS and a VGA BIOS image. The ENiGMA½ installer (<code class="language-plaintext highlighter-rouge">misc/install.sh</code>) downloads these automatically to <code class="language-plaintext highlighter-rouge">misc/v86_bios/</code>. To download manually:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> misc/v86_bios
+curl <span class="nt">-fL</span> https://github.com/copy/v86/raw/master/bios/seabios.bin <span class="nt">-o</span> misc/v86_bios/seabios.bin
+curl <span class="nt">-fL</span> https://github.com/copy/v86/raw/master/bios/vgabios.bin <span class="nt">-o</span> misc/v86_bios/vgabios.bin
+</code></pre></div></div>
+
+<h4 id="disk-image">Disk Image</h4>
+
+<p>You need a raw FreeDOS disk image (<code class="language-plaintext highlighter-rouge">.img</code>) with your door game pre-installed. Raw <code class="language-plaintext highlighter-rouge">.img</code> images are <strong>fully compatible between QEMU, DOSBox-X, and v86</strong> — set up your image with QEMU or DOSBox-X, then point <code class="language-plaintext highlighter-rouge">v86_door</code> at it on the production server.</p>
+
+<hr>
+
+<h3 id="configuration">Configuration</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Required</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">name</code></td>
+      <td><img class="emoji" title=":+1:" alt=":+1:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20"></td>
+      <td>Door name. Used as a key for tracking concurrent sessions.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">image</code></td>
+      <td><img class="emoji" title=":+1:" alt=":+1:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44d.png" height="20" width="20"></td>
+      <td>Path to the raw FreeDOS disk image (<code class="language-plaintext highlighter-rouge">.img</code>).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">dropFileType</code></td>
+      <td><img class="emoji" title=":-1:" alt=":-1:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44e.png" height="20" width="20"></td>
+      <td>Drop file to generate and inject onto the <code class="language-plaintext highlighter-rouge">A:</code> floppy: <code class="language-plaintext highlighter-rouge">DORINFO</code>, <code class="language-plaintext highlighter-rouge">DOOR</code>, or <code class="language-plaintext highlighter-rouge">DOOR32</code>. Omit if the door needs no drop file.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">runBatch</code></td>
+      <td><img class="emoji" title=":-1:" alt=":-1:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44e.png" height="20" width="20"></td>
+      <td>Multi-line batch script written to <code class="language-plaintext highlighter-rouge">A:\RUN.BAT</code> at runtime. Supports <a href="#runbatch-variables">variable substitution</a>. See <a href="#one-image-multiple-doors">One Image, Multiple Doors</a>.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">nodeMax</code></td>
+      <td><img class="emoji" title=":-1:" alt=":-1:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44e.png" height="20" width="20"></td>
+      <td>Max concurrent sessions. <code class="language-plaintext highlighter-rouge">0</code> = unlimited.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tooManyArt</code></td>
+      <td><img class="emoji" title=":-1:" alt=":-1:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44e.png" height="20" width="20"></td>
+      <td>Art spec to display when <code class="language-plaintext highlighter-rouge">nodeMax</code> is exceeded.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">memoryMb</code></td>
+      <td><img class="emoji" title=":-1:" alt=":-1:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44e.png" height="20" width="20"></td>
+      <td>Guest RAM in MB. Default: <code class="language-plaintext highlighter-rouge">64</code>.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">biosPath</code></td>
+      <td><img class="emoji" title=":-1:" alt=":-1:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44e.png" height="20" width="20"></td>
+      <td>Path to SeaBIOS image. Default: <code class="language-plaintext highlighter-rouge">misc/v86_bios/seabios.bin</code>.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">vgaBiosPath</code></td>
+      <td><img class="emoji" title=":-1:" alt=":-1:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f44e.png" height="20" width="20"></td>
+      <td>Path to VGA BIOS image. Default: <code class="language-plaintext highlighter-rouge">misc/v86_bios/vgabios.bin</code>.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="drop-file-filenames-on-a">Drop File Filenames on A:</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th><code class="language-plaintext highlighter-rouge">dropFileType</code></th>
+      <th>Filename on <code class="language-plaintext highlighter-rouge">A:</code>
+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DORINFO</code></td>
+      <td>
+<code class="language-plaintext highlighter-rouge">DORINFOx.DEF</code> (x = node-based suffix per spec)</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DOOR</code></td>
+      <td><code class="language-plaintext highlighter-rouge">DOOR.SYS</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">DOOR32</code></td>
+      <td><code class="language-plaintext highlighter-rouge">door32.sys</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="runbatch-variables">runBatch Variables</h4>
+
+<p>When <code class="language-plaintext highlighter-rouge">runBatch</code> is set, ENiGMA replaces the following variables before writing <code class="language-plaintext highlighter-rouge">RUN.BAT</code>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Description</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{dropFile}</code></td>
+      <td>Drop file filename</td>
+      <td><code class="language-plaintext highlighter-rouge">DORINFO1.DEF</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{node}</code></td>
+      <td>Node number</td>
+      <td><code class="language-plaintext highlighter-rouge">1</code></td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">{baud}</code></td>
+      <td>Baud rate</td>
+      <td><code class="language-plaintext highlighter-rouge">57600</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+
+<h3 id="example-menu-entry">Example Menu Entry</h3>
+
+<pre><code class="language-hjson">doorPimpWars: {
+    desc: Playing PimpWars
+    module: v86_door
+    config: {
+        name: PimpWars
+        image: /path/to/images/freedos_doors.img
+        dropFileType: DORINFO
+        nodeMax: 1
+        tooManyArt: DOORMANY
+        runBatch:
+            '''
+            COPY A:\{dropFile} C:\DOORS\PW\
+            C:\FOSSIL\X00.SYS
+            CD C:\DOORS\PW
+            PW.EXE {node}
+            ECHO Returning to BBS, please wait... &gt; COM1
+            '''
+    }
+}
+</code></pre>
+
+<hr>
+
+<h3 id="image-preparation">Image Preparation</h3>
+
+<p>Your disk image must contain:</p>
+<ul>
+  <li>A working FreeDOS installation</li>
+  <li>Your door game(s) installed (e.g. <code class="language-plaintext highlighter-rouge">C:\DOORS\PIMPWARS\</code>)</li>
+  <li>Optionally, a FOSSIL driver such as <a href="http://pcmicro.com/xtalk/x00.html">X00</a> — required by most classic DOS doors</li>
+  <li>An <code class="language-plaintext highlighter-rouge">AUTOEXEC.BAT</code> (or <code class="language-plaintext highlighter-rouge">FDAUTO.BAT</code>) that calls <code class="language-plaintext highlighter-rouge">A:\RUN.BAT</code> and powers off</li>
+</ul>
+
+<h4 id="autoexecbat-convention">AUTOEXEC.BAT Convention</h4>
+
+<p>Set up your image’s <code class="language-plaintext highlighter-rouge">AUTOEXEC.BAT</code> once. ENiGMA writes <code class="language-plaintext highlighter-rouge">RUN.BAT</code> to <code class="language-plaintext highlighter-rouge">A:</code> at runtime with the door-specific launch commands:</p>
+
+<div class="language-bat highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">CALL</span> <span class="kd">A</span>:\RUN.BAT
+<span class="kd">ECHO</span> <span class="kd">Shutting</span> <span class="kd">down</span><span class="o">,</span> <span class="kd">please</span> <span class="kd">wait</span>... <span class="o">&gt;</span> <span class="kd">COM1</span>
+<span class="kd">FDAPM</span> <span class="kd">POWEROFF</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+<strong><code class="language-plaintext highlighter-rouge">CALL A:\RUN.BAT</code></strong> — executes the per-door launch script ENiGMA injects at runtime</li>
+  <li>
+<strong><code class="language-plaintext highlighter-rouge">ECHO ... &gt; COM1</code></strong> — sends a message to the user’s terminal while FreeDOS shuts down (can take a few seconds)</li>
+  <li>
+<strong><code class="language-plaintext highlighter-rouge">FDAPM POWEROFF</code></strong> — shuts FreeDOS down cleanly; placed after the CALL so it always fires even if the door crashes</li>
+</ul>
+
+<h4 id="one-image-multiple-doors">One Image, Multiple Doors</h4>
+
+<p>Because <code class="language-plaintext highlighter-rouge">RUN.BAT</code> is generated at runtime, a single FreeDOS image can host multiple doors. Each door has its own menu entry pointing at the same <code class="language-plaintext highlighter-rouge">image</code> path with a different <code class="language-plaintext highlighter-rouge">runBatch</code>:</p>
+
+<pre><code class="language-hjson">doorPimpWars: {
+    module: v86_door
+    config: {
+        name: PimpWars
+        image: /path/to/images/freedos_doors.img
+        dropFileType: DORINFO
+        nodeMax: 1
+        runBatch:
+            '''
+            COPY A:\{dropFile} C:\DOORS\PW\
+            C:\FOSSIL\X00.SYS
+            CD C:\DOORS\PW
+            PW.EXE {node}
+            ECHO Returning to BBS, please wait... &gt; COM1
+            '''
+    }
+}
+
+doorSmurfCombat: {
+    module: v86_door
+    config: {
+        name: SmurfCombat
+        image: /path/to/images/freedos_doors.img   // same image
+        dropFileType: DOOR
+        nodeMax: 1
+        runBatch:
+            '''
+            COPY A:\{dropFile} C:\DOORS\SMURF\
+            C:\FOSSIL\X00.SYS
+            CD C:\DOORS\SMURF
+            SMURF.EXE {node}
+            ECHO Returning to BBS, please wait... &gt; COM1
+            '''
+    }
+}
+</code></pre>
+
+<blockquote>
+  <p><img class="emoji" title=":information_source:" alt=":information_source:" src="https://github.githubassets.com/images/icons/emoji/unicode/2139.png" height="20" width="20"> Concurrent sessions on the same image file are safe — each worker loads the image into its own isolated memory buffer. <code class="language-plaintext highlighter-rouge">nodeMax: 1</code> gates single-player doors, but even without it there is no shared state between sessions.</p>
+</blockquote>
+
+<h4 id="fossil-driver">FOSSIL Driver</h4>
+
+<p>Most classic DOS doors use the <a href="https://en.wikipedia.org/wiki/FOSSIL">FOSSIL</a> serial interface for COM1 I/O. If your door fails to start or falls back to local mode, a FOSSIL driver is needed. <a href="http://pcmicro.com/xtalk/x00.html">X00</a> works well with v86.</p>
+
+<p>Load it from <code class="language-plaintext highlighter-rouge">runBatch</code> (per-door, recommended) rather than <code class="language-plaintext highlighter-rouge">FDCONFIG.SYS</code> (global):</p>
+
+<div class="language-bat highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">C</span>:\FOSSIL\X00.SYS
+</code></pre></div></div>
+
+<p>Or in <code class="language-plaintext highlighter-rouge">FDCONFIG.SYS</code> if all doors on the image need it:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DEVICE=C:\FOSSIL\X00.SYS
+</code></pre></div></div>
+
+<h4 id="creating-the-image-with-qemu">Creating the Image with QEMU</h4>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Create a 500MB raw image</span>
+qemu-img create <span class="nt">-f</span> raw freedos_mygame.img 500M
+
+<span class="c"># Install FreeDOS (boot from CD)</span>
+qemu-system-i386 <span class="nt">-hda</span> freedos_mygame.img <span class="nt">-cdrom</span> FD14CD.iso <span class="nt">-boot</span> d
+
+<span class="c"># Boot into FreeDOS to install your door</span>
+qemu-system-i386 <span class="nt">-hda</span> freedos_mygame.img
+
+<span class="c"># Transfer files from host using QEMU's vfat driver — files appear on D:</span>
+qemu-system-i386 <span class="nt">-hda</span> freedos_mygame.img <span class="nt">-hdb</span> fat:/path/to/door/files
+</code></pre></div></div>
+
+<p><a href="https://dosbox-x.com/">DOSBox-X</a> is a graphical alternative for image setup on Windows, macOS, and Linux. See the DOSBox-X documentation for <code class="language-plaintext highlighter-rouge">imgmount</code>.</p>
+
+<h4 id="freedos-boot-configuration-for-fast-startup">FreeDOS Boot Configuration for Fast Startup</h4>
+
+<p>For ~5 second boot times, configure FreeDOS to use Emergency Mode (no memory managers, no networking). In <code class="language-plaintext highlighter-rouge">FDCONFIG.SYS</code>:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MENUDEFAULT=5,0
+</code></pre></div></div>
+
+<p>Ensure the <code class="language-plaintext highlighter-rouge">5?</code> config block loads your FOSSIL driver:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>5?DEVICE=C:\FOSSIL\X00.SYS
+5?SHELL=C:\FreeDOS\BIN\COMMAND.COM C:\FreeDOS\BIN /E:1024 /P=C:\FDAUTO.BAT
+</code></pre></div></div>
+
+<hr>
+
+<h2 id="see-also">See Also</h2>
+<ul>
+  <li><a href="/enigma-bbs/modding/local-doors.html">Local Doors</a></li>
+  <li><a href="/enigma-bbs/modding/local-doors-dos-emulation.html">External DOS Emulators</a></li>
+  <li><a href="/enigma-bbs/modding/local-doors-abracadabra.html">Scripts &amp; Native Binaries</a></li>
+  <li>
+<a href="https://github.com/copy/v86">v86</a> — upstream JavaScript x86 emulator</li>
+</ul>
+
+</div>
+
+              <div class="PageNavigation">
+              
+              <a class="btn" style="float:left;margin-right: 20px;" href="/enigma-bbs/modding/local-doors-dos-emulation.html">« Local Doors — External DOS Emulators</a>
+              
+              
+              <a class="btn" style="float: right;margin-left: 20px" href="/enigma-bbs/modding/door-servers.html">Door Servers »</a>
+              
+              <br clear="both">
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+
+    
+  </body>
+</html>
